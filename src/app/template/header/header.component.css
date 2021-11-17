@@ -1,0 +1,139 @@
+
+
+*, body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    overflow: hidden;
+  }
+  
+  header {
+    height: 70vh;
+    width: 100%;
+    background-color: black;
+    padding: 2.8em 2.8em 0 2.8em;
+  
+  }
+  
+  .top-navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    z-index: 10;
+  }
+  
+  .empty::before {
+    content: " ";
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 1;
+  }
+  
+  
+  .logo {
+    font-weight: bolder;
+    letter-spacing: 0.6px;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: white;
+    flex: 10%;
+  }
+  
+  .logo {
+             background-image: url ("assets/img.logodark.png") no-repeat; 
+             max-width: 300px; 
+             max-height: 300px;
+    }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 0%;
+    min-width: 50%;
+  }
+  
+  .nav-menu {
+    margin-bottom: 24px;
+  }
+  .nav-menu ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-menu ul li {
+    margin: 0 8px;
+  }
+  
+  .nav-menu ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav-menu ul li a:hover {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  
+
+  .search {
+    display: flex;
+    flex-flow: row no-wrap;
+    justify-content: space-evenly;
+    background: white;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  
+  .search .label {
+    display: block;
+    font-size: 0.75rem;
+    color: #111111;
+    font-weight: bold;
+  }
+  
+  .search-inputs {
+  flex: 1 0 auto;
+  padding: 16px 24px;
+  }
+  
+  .search-inputs:nth-child(1) {
+    flex: 1.5 0 0%;
+  }
+  
+  .search-inputs:nth-child(2),
+  .search-inputs:nth-child(3){
+    flex: 1 0 0%;
+  }
+  
+  .search-inputs:nth-child(4){
+    flex: 0.85 0 0%;
+  }
+  
+  .search-inputs input {
+    border: none;
+    display: block;
+  }
+  
+  .search-button {
+    flex: 0 0 auto;
+    padding: 8px 8px 8px 0;
+  }
+  
+  .search-button button {
+    font-size: 16px;
+    width: 48px;  
+    height: 48px;
+    border-radius: 30px;
+    border: none;
+    background: red;
+    color: white;
+  }
+  
+  .cta {
+    flex: 1.5 0 0%;
+  }
